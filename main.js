@@ -1,6 +1,6 @@
-import { Player } from "./Clases/Classes.js";
-import orderTurns from "./specialFunctions/turnFunction.js";
-import insertCard from "./specialFunctions/insertCard.js";
+import { Player } from "./assets/js/Clases/Classes.js";
+import orderTurns from "./assets/js/specialFunctions/turnFunction.js";
+import insertCard from "./assets/js/specialFunctions/insertCard.js";
 
 // Invocaciones DOM
 const form = document.querySelector("form");
