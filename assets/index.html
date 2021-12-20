@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Favicon -->
+		<link rel="icon" href="./img/werewolfIcon.ico" />
+		<!-- Bootstrap 5.0.2 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="./css/styles.css">
+
+		<title>WoD - Werewolf</title>
+	</head>
+	<body>
+
+        <!-- Boton ADD -->
+		<div class="container mt-5 text-center">
+			<button
+				id="btnAdd"
+				type="button"
+				class="btn customBtn m-1"
+				data-bs-toggle="modal"
+				data-bs-target="#addPlayerBtn"
+			>
+				ADD
+			</button>
+		</div>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="addPlayerBtn"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-sm container">
+				<div class="modal-content">
+					<div class="modal-body">
+                        
+                        <!-- FORMULARIO ADD -->
+                            <form>
+                                <!-- NOMBRE -->
+                                
+                                <div class="mb-3 form-group">
+                                    <div class="row">
+                                        <div class="col-8">
+                                                <label for="addName" class="form-label w-100">Nombre</label>
+                                                <input type="text" name="addName" class="form-control col" id="addName" placeholder="Ingrese un Nombre">   
+                                            </div>
+                                            
+                                        <!-- Botton dropdown
+                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul> -->
+                                        <div class="col-4 text-center">
+                                            <label for="addIniciative" class="form-label text-middle">Iniciativa</label>
+                                            <input type="number" name="addIniciative" class="form-control col">
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TEAM CHECKBOXES -->
+                                <div class="form-group text-center my-4">
+                                    <h6>Team</h6>
+                                    <div class="m-1 ">
+                                        <div class="form-check form-check-inline" >
+                                            <input class="form-check-input bg-danger" type="radio" name="addTeam" value="team1">
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input bg-success" type="radio" name="addTeam" value="team2">
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input bg-warning" type="radio" name="addTeam" value="team3">
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input bg-dark " type="radio" name="addTeam" value="team4">
+                                        </div>
+                                    </div>  
+                                </div>
+                                
+                                
+                                <!-- <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div> -->
+                                <div class="text-center my-4">
+                                    <button type="submit" class="btn btn-primary">Agregar</button>
+                                    <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Cerrar
+                                </div>
+                            </form>                       
+				    </div>
+			    </div>
+		    </div>
+         </div>
+
+        <!-- ORDER LIST -->
+        <div class="container combatList ">
+            <div class="row">
+                <div class="col">
+                    
+                    <!-- PLAYER CARD -->
+
+
+                    <div class="card my-1 playerCard">
+                        <div class="card-body">
+                            <h5 class="card-title"> Nombre Jugador</h5>
+                            This is some text within a card body.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+		<!-- My JS -->
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>
