@@ -36,7 +36,7 @@ function addPlayer(e) {
 	//const orderedTurns = orderTurns(playersArray);
 	sorted = playersArray.slice();
 
-	sorted
+	sorted = sorted
 		.sort((a, b) => parseInt(a.iniciative) - parseInt(b.iniciative))
 		.map((a) => parseInt(a.iniciative));
 	console.log("Array Ordenado");
