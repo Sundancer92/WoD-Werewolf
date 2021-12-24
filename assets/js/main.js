@@ -32,14 +32,13 @@ function addPlayer(e) {
 	const player = new Player(addForm.name, addForm.iniciative, addForm.team);
 
 	playersArray.push(player);
-	console.log("Captura playersArray");
-	console.log(playersArray);
+	// console.log("Captura playersArray");
+	// console.log(playersArray);
 
 	const orderedTurns = orderTurns(playersArray);
-	console.log("Array Ordenado");
 	console.log(orderedTurns);
+	// console.log("Array Ordenado");
+	// console.log(orderedTurns);
 
-	insertCard(addForm.name, addForm.iniciative, addForm.team);
-
-	// console.log(original, sorted);
+	insertCard(orderedTurns);
 }
