@@ -1,9 +1,12 @@
-export default function orderTurns(player) {
-	console.log("player log");
-	console.log(player);
+// export default function orderTurns(playersArray) {
+// 	return playersArray.sort((a, b) => (a.iniciative < b.iniciative ? 1 : -1));
+// }
 
-	return player.sort((a, b) => (a.iniciative < b.iniciative ? 1 : -1));
-}
+const orderedTurns = function (playersArray) {
+	return playersArray.sort((a, b) => (a.iniciative > b.iniciative ? 1 : -1));
+};
+
+export default orderedTurns;
 
 // playersArray.sort(function (a, b) {
 // 	if (a.getIniciative() > b.getIniciative()) {

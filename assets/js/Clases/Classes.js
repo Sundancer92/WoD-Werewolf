@@ -1,65 +1,59 @@
 class Character {
-	#name;
-	#iniciative;
-	#team;
-	#invocacion;
-	#buff;
-	#debuff;
 	constructor(name, iniciative, team, invocacion, buff, debuff) {
-		this.#name = name;
-		this.#iniciative = iniciative;
-		this.#team = team;
-		this.#invocacion = invocacion;
-		this.#buff = buff;
-		this.#debuff = debuff;
+		this.name = name;
+		this.iniciative = iniciative;
+		this.team = team;
+		this.invocacion = invocacion;
+		this.buff = buff;
+		this.debuff = debuff;
 	}
 
 	getName() {
-		return this.#name;
+		return this.name;
 	}
 
 	setName(newName) {
-		this.#name = newName;
+		this.name = newName;
 	}
 
 	getIniciative() {
-		return this.#iniciative;
+		return this.iniciative;
 	}
 
 	getTeam() {
-		return this.#team;
+		return this.team;
 	}
 
 	setTeam(newTeam) {
-		this.#team = newTeam;
+		this.team = newTeam;
 	}
 
 	getIniciative() {
-		return this.#iniciative;
+		return this.iniciative;
 	}
 
 	getInvocacion() {
-		return this.#invocacion;
+		return this.invocacion;
 	}
 
 	setInvocacion(nuevaInvocacion) {
-		this.#invocacion = nuevaInvocacion;
+		this.invocacion = nuevaInvocacion;
 	}
 
 	getBuff() {
-		return this.#buff;
+		return this.buff;
 	}
 
 	setBuff(nuevoBuff) {
-		this.#buff = nuevoBuff;
+		this.buff = nuevoBuff;
 	}
 
 	getDebuff() {
-		return this.#debuff;
+		return this.debuff;
 	}
 
 	setDebuff(nuevoDebuff) {
-		this.#debuff = nuevoDebuff;
+		this.debuff = nuevoDebuff;
 	}
 }
 

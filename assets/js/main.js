@@ -1,9 +1,11 @@
-import { Player } from "./assets/js/Clases/Classes.js";
-import orderTurns from "./assets/js/specialFunctions/turnFunction.js";
-import insertCard from "./assets/js/specialFunctions/insertCard.js";
+import { Player } from "./Clases/Classes.js";
+import orderTurns from "./specialFunctions/turnFunction.js";
+import insertCard from "./specialFunctions/insertCard.js";
 
 // Invocaciones DOM
 const form = document.querySelector("form");
+
+var modalAddPlayer = document.getElementById("addPlayerBtn");
 
 // Declaracion Variables
 const playersArray = [];
@@ -33,14 +35,9 @@ function addPlayer(e) {
 	console.log("Captura playersArray");
 	console.log(playersArray);
 
-	//const orderedTurns = orderTurns(playersArray);
-	sorted = playersArray.slice();
-
-	sorted = sorted
-		.sort((a, b) => parseInt(a.iniciative) - parseInt(b.iniciative))
-		.map((a) => parseInt(a.iniciative));
+	const orderedTurns = orderTurns(playersArray);
 	console.log("Array Ordenado");
-	console.log(playersArray);
+	console.log(orderedTurns);
 
 	insertCard(addForm.name, addForm.iniciative, addForm.team);
 
