@@ -5,16 +5,11 @@ import insertCard from "./specialFunctions/insertCard.js";
 // Invocaciones DOM
 const form = document.querySelector("form");
 
-var modalAddPlayer = document.getElementById("addPlayerBtn");
-
 // Declaracion Variables
 const playersArray = [];
-var sorted = [];
+
 // eventListeners
 form.addEventListener("submit", addPlayer);
-
-// const original = [1, 7, 3, 5];
-// const sorted = original.slice().sort((a, b) => a - b);
 
 //  Creacion nuevo Jugador
 function addPlayer(e) {
@@ -25,20 +20,11 @@ function addPlayer(e) {
 		iniciative: Number(form.addIniciative.value),
 		team: form.addTeam.value,
 	};
-	console.log(typeof addForm.iniciative);
-	// console.log("Captura FORM");
-	// console.log(addForm);
-
+	// CREACION NUEVO JUGADOR
 	const player = new Player(addForm.name, addForm.iniciative, addForm.team);
-
 	playersArray.push(player);
-	// console.log("Captura playersArray");
-	// console.log(playersArray);
-
+	// TURNOS ORDENADOS
 	const orderedTurns = orderTurns(playersArray);
-	console.log(orderedTurns);
-	// console.log("Array Ordenado");
-	// console.log(orderedTurns);
-
+	// INSERCION NUEVO JUGADOR
 	insertCard(orderedTurns);
 }

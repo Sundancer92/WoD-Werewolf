@@ -127,11 +127,19 @@
                     <!-- PLAYER CARD -->
 
 
-                    <div class="card my-1 playerCard">
-                        <div class="card-body row">
-                            <h5 class="card-title col-10">Nombre</h5>
-                            <p class="card-text text-center col-2">Iniciativa</p>
-                            <p class="card-text">Equipo:</p>
+                    <div class="card my-1 playerCard ${turns[character].team}">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre</h5>
+                            <p class="card-text">Iniciative</p>
+                            <p class="card-text">Team</p>
+                            <div>
+                            <input 
+                                type="button" 
+                                class="btn btn-primary rage"
+                                id='${turns[character].name}' 
+                                value="Actuar Ahora"
+                                />
+                            </div>
                         </div>
                     </div>
 

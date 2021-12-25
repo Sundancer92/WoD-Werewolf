@@ -32,6 +32,10 @@ class Character {
 		return this.iniciative;
 	}
 
+	setIniciative(newIniciative) {
+		this.iniciative = newIniciative;
+	}
+
 	getInvocacion() {
 		return this.invocacion;
 	}
