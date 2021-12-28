@@ -143,6 +143,49 @@
                         </div>
                     </div>
 
+                    <!-- TEST CARD -->
+                    <div class="border my-2 rounded ${turns[character].team}">
+                        <div class="d-flex flex-row">
+                            <!-- BODY SECTION -->
+                            <div class="card-body col-10 ">  
+                                <div class="row">                             
+                                        <h5 class="card-title col-10 px-0">Nombre</h5>
+                                        <div class="col-2 mb-1 px-0">
+                                            <input
+                                                class="form-control text-center p-0 w-50"
+                                                id="formControlReadonly"
+                                                type="text"
+                                                placeholder="0"
+                                                aria-label="readonly input example"
+                                                readonly
+                                            />
+                                            <!-- <label class="form-label" for="formControlReadonly"></label> -->
+                                        </div>
+                                    <hr class="mb-0">
+                                    asd
+                                    <hr>
+                                    <p class="card-text px-0">Team</p>
+                                </div>
+                            </div>
+
+                            <!-- BTN SECTION -->
+                            <div class="col-2 bg-danger rounded-end d-flex flex-column m-0">
+                                <input class="w-50 bg-white rounded-circle my-1 mx-auto" type="image" src="./assets/img/btnIcons/deathBtn.png">
+                                <input class="w-50 bg-white rounded-circle my-1 mx-auto" type="image" src="./assets/img/btnIcons/magicBtn.png">
+                                <input class="w-50 bg-white rounded-circle my-1 mx-auto" type="image" src="./assets/img/btnIcons/pauseBtn.png">
+                                <input class="w-50 bg-white rounded-circle my-1 mx-auto" type="image" src="./assets/img/btnIcons/rageBtn.png">
+
+
+                                <!-- <input 
+                                    type="button" 
+                                    class="btn btn-primary rage"
+                                    id='${turns[character].name}' 
+                                    value="Actuar Ahora"
+                                    /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COMBATLIST END -->
                 </div>
             </div>
         </div>
